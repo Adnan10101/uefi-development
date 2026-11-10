@@ -1,0 +1,19 @@
+
+[Defines]
+  INF_VERSION    = 1.30
+  BASE_NAME      = text_display
+  FILE_GUID      = 7D1A6B42-9F30-4C81-A2D5-6E7F8091B234
+  MODULE_TYPE    = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT    = UefiMain
+
+[Sources]
+  text_display.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  UefiBootServicesTableLib
